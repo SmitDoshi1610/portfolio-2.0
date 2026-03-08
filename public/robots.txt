@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# NOTE: Update this URL to match NEXT_PUBLIC_SITE_URL in your .env file
+Sitemap: https://smitdoshi1610.github.io/Portfolio/sitemap.xml
+Host: https://smitdoshi1610.github.io/Portfolio
