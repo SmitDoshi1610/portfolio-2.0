@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GlobalEffects from "@/components/GlobalEffects";
 import { siteConfig } from "@/lib/siteConfig";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
@@ -192,14 +193,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="dns-prefetch" href="https://github.com" />
                 <link rel="dns-prefetch" href="https://linkedin.com" />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-QES41G37S2"></script>
-                <script>
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QES41G37S2" strategy="afterInteractive"></Script>
+                <Script id="google-analytics" strategy="afterInteractive">
+                {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments)}
                 gtag('js', new Date());
 
                 gtag('config', 'G-QES41G37S2');
-                </script>
+                `}
+                </Script>
             </head>
             <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
                 <Preloader />
