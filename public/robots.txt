@@ -13,5 +13,5 @@ Allow: /
 Crawl-delay: 1
 
 # NOTE: Update this URL to match NEXT_PUBLIC_SITE_URL in your .env file
-Sitemap: https://smitdoshi1610.github.io/Portfolio/sitemap.xml
-Host: https://smitdoshi1610.github.io/Portfolio
+Sitemap: https://www.sdtechworld.in/sitemap.xml
+Host: https://www.sdtechworld.in/
