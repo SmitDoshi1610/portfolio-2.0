@@ -192,6 +192,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link rel="dns-prefetch" href="https://github.com" />
                 <link rel="dns-prefetch" href="https://linkedin.com" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-QES41G37S2"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-QES41G37S2');
+                </script>
             </head>
             <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
                 <Preloader />
