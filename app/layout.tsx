@@ -119,6 +119,7 @@ export const metadata: Metadata = {
         "msapplication-TileColor": siteConfig.themeColor,
         "msapplication-config": "/browserconfig.xml",
         "format-detection": "telephone=no",
+        "google-site-verification": "H--DFpR3lw7lYr7p2p3-owXffs5AX5BSr0euVAzEj_E"
     },
 };
 
@@ -203,6 +204,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 gtag('config', 'G-QES41G37S2');
                 `}
                 </Script>
+            <meta name="google-site-verification" content="H--DFpR3lw7lYr7p2p3-owXffs5AX5BSr0euVAzEj_E" />
             </head>
             <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
                 <Preloader />

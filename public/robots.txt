@@ -1,17 +1,32 @@
+# Robots.txt for https://www.sdtechworld.in
+
 User-agent: *
 Allow: /
+
+# Block internal routes
 Disallow: /api/
 Disallow: /_next/
-Disallow: /static/
+Disallow: /admin/
 
+# Allow static assets for rendering
+Allow: /images/
+Allow: /fonts/
+Allow: /static/
+
+# Sitemap location
+Sitemap: https://www.sdtechworld.in/sitemap.xml
+
+# Preferred host
+Host: https://www.sdtechworld.in
+
+
+# Google bot rules
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
+Disallow: /api/
 
+
+# Bing bot rules
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
-
-# NOTE: Update this URL to match NEXT_PUBLIC_SITE_URL in your .env file
-Sitemap: https://www.sdtechworld.in/sitemap.xml
-Host: https://www.sdtechworld.in/
