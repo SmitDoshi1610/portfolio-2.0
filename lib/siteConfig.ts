@@ -11,7 +11,7 @@ const BASE_URL =
 export const siteConfig = {
     baseUrl: BASE_URL,
     name: "Smit Doshi",
-    fullName: "Smit Doshi | Software Engineer & TypeScript Expert",
+    fullName: "Smit Doshi | Full Stack Developer",
     siteName: "Smit Doshi Portfolio",
     description:
         "Smit Doshi is a Software Engineer at Zeus Learning specializing in TypeScript, Angular, and full-stack development. Explore his projects, experience, and skills.",
@@ -34,7 +34,7 @@ export const siteConfig = {
         codechef: "https://www.codechef.com/users/smit_doshi16",
     },
     images: {
-        ogImage: `${BASE_URL}/og-image.jpg`,
+        ogImage: `${BASE_URL}/og-image.png`,
         icon192: `${BASE_URL}/icon-192.png`,
         icon512: `${BASE_URL}/icon-512.png`,
         appleTouchIcon: `${BASE_URL}/apple-touch-icon.png`,

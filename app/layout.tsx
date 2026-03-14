@@ -76,11 +76,11 @@ export const metadata: Metadata = {
         description: siteConfig.description,
         images: [
             {
-                url: "/og-image.jpg",
+                url: "/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: `${siteConfig.name} — Software Engineer & TypeScript Expert`,
-                type: "image/jpeg",
+                alt: `${siteConfig.name} — Software Engineer | Full Stack Developer`,
+                type: "image/png",
             },
         ],
     },
@@ -88,7 +88,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: siteConfig.fullName,
         description: siteConfig.description,
-        images: [{ url: "/og-image.jpg", alt: siteConfig.siteName }],
+        images: [{ url: "/og-image.png", alt: siteConfig.siteName }],
         creator: siteConfig.author.twitterHandle,
     },
     alternates: {
@@ -106,7 +106,7 @@ export const metadata: Metadata = {
         apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
         shortcut: "/favicon.ico",
     },
-    manifest: "/manifest.webmanifest",
+    manifest: "/site.webmanifest",
     verification: {
         // Add your Google Search Console verification token here:
         // google: "YOUR_GOOGLE_VERIFICATION_TOKEN",
